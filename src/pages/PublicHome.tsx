@@ -66,18 +66,18 @@ const PublicHome = () => {
       <HeroSection />
       
       {/* Categories Section */}
-      <section className="py-16 px-4">
+      <section className="py-12 sm:py-16 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-poppins text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-poppins text-foreground mb-4">
               Browse by Category
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               Explore our organized knowledge base to find exactly what you're looking for
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {categories.map((category) => (
               <CategoryCard
                 key={category.title}
@@ -93,18 +93,18 @@ const PublicHome = () => {
       </section>
 
       {/* Recent Articles Section */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-12 sm:py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold font-poppins text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold font-poppins text-foreground mb-4">
               Recent Articles
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-base sm:text-lg text-muted-foreground px-4">
               Stay up to date with our latest guides and updates
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
             {recentArticles.map((article) => (
               <ArticleCard
                 key={article.title}
@@ -120,15 +120,15 @@ const PublicHome = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 bg-background border-t">
+      <footer className="py-8 sm:py-12 px-4 bg-background border-t">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <div className="text-2xl font-bold font-poppins text-primary">
-                📚 BookStack
+              <div className="text-xl sm:text-2xl font-bold font-poppins text-primary">
+                Knowledge Hub
               </div>
             </div>
-            <div className="flex space-x-8 text-sm text-muted-foreground">
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 text-sm text-muted-foreground text-center">
               <a href="/terms" className="hover:text-foreground transition-colors">
                 Terms of Service
               </a>
@@ -140,8 +140,8 @@ const PublicHome = () => {
               </a>
             </div>
           </div>
-          <div className="text-center mt-8 pt-8 border-t text-sm text-muted-foreground">
-            © 2024 BookStack Knowledge Portal. All rights reserved.
+          <div className="text-center mt-6 sm:mt-8 pt-6 sm:pt-8 border-t text-xs sm:text-sm text-muted-foreground">
+            © 2024 Knowledge Hub Portal. All rights reserved.
           </div>
         </div>
       </footer>
