@@ -36,7 +36,7 @@ export const Header = ({ isEmployee = false }: HeaderProps) => {
             <div className={`text-2xl font-bold font-poppins ${
               isEmployee ? "text-primary-foreground" : "text-primary"
             }`}>
-              📚 BookStack
+              Knowledge Hub
             </div>
           </Link>
 
